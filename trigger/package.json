@@ -11,6 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "aws-api-gateway-client": "^0.2.9",
-    "mongodb": "^2.2.33"
+    "mongodb": "mongodb/node-mongodb-native#3.0.0"
   }
 }
