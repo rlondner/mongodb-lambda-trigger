@@ -1,4 +1,6 @@
-# MongoDB Change Stream - AWS Lambda demo
+# MongoDB 3.6 Change Streams - AWS Lambda demo
+
+This repository demonstrates how to use MongoDB Change Streams as a trigger to an AWS Lambda function.
 
 ## AWS Lambda function
 
