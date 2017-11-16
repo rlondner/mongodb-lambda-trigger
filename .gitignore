@@ -1,0 +1,10 @@
+
+email-lambda/dev.config.js
+email-lambda/dev.sam.yaml
+email-lambda/node_modules/
+trigger/node_modules/
+trigger/data
+email-lambda/packaged.yaml
+email-lambda/package-lock.json
+email-lambda/event_simple.json
+trigger/package-lock.json

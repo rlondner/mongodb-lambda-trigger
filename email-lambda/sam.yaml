@@ -1,0 +1,24 @@
+AWSTemplateFormatVersion : '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: 'A Lambda function that sends an email through AWS SES'
+
+Resources:
+  SendEmail:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Runtime: nodejs6.10
+      Handler: index.handler
+      FunctionName: SendEmail
+      Description: 'A Lambda function that sends an email through AWS SES'
+      CodeUri: .
+      Timeout: 10
+      Environment:
+        Variables:
+          S3_BUCKET: '<BUCKET_NAME>'
+          FROM_ADDRESS: '<SENDER_EMAIL_ADDRESS>'
+      Events:
+        Api:
+          Type: Api
+          Properties:
+            Path: /sendemail
+            Method: post

@@ -1,0 +1,1 @@
+sam local invoke 'SendEmail' -e event.json -t sam.yaml

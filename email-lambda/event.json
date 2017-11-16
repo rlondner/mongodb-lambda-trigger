@@ -1,0 +1,51 @@
+{
+  "resource": "/sendemail",
+  "path": "/sendemail",
+  "httpMethod": "POST",
+  "headers": {
+    "Accept": "application/json",
+    "CloudFront-Forwarded-Proto": "https",
+    "CloudFront-Is-Desktop-Viewer": "true",
+    "CloudFront-Is-Mobile-Viewer": "false",
+    "CloudFront-Is-SmartTV-Viewer": "false",
+    "CloudFront-Is-Tablet-Viewer": "false",
+    "CloudFront-Viewer-Country": "US",
+    "Content-Type": "application/json",
+    "Host": "test.execute-api.us-east-1.amazonaws.com",
+    "User-Agent": "axios/0.16.2",
+    "Via": "1.1 test.cloudfront.net (CloudFront)",
+    "X-Amz-Cf-Id": "test==",
+    "X-Amzn-Trace-Id": "Root=test",
+    "x-api-key": "key",
+  },
+  "queryStringParameters": null,
+  "pathParameters": null,
+  "stageVariables": null,
+  "requestContext": {
+    "path": "/Stage/sendemail",
+    "accountId": "12312312",
+    "resourceId": "324324",
+    "stage": "Stage",
+    "requestId": "213123123",
+    "identity": {
+      "cognitoIdentityPoolId": null,
+      "accountId": null,
+      "cognitoIdentityId": null,
+      "caller": null,
+      "apiKey": "213123",
+      "sourceIp": "",
+      "accessKey": null,
+      "cognitoAuthenticationType": null,
+      "cognitoAuthenticationProvider": null,
+      "userArn": null,
+      "userAgent": "axios/0.16.2",
+      "user": null
+    },
+    "resourcePath": "/sendemail",
+    "httpMethod": "POST",
+    "apiId": "ciwqx6i5la"
+  },
+  "body":
+    "{\"_id\":{\"_data\":\"gloMxgUAAAACRmRfaWQAZFoMxgVG6bRoULvcNQBaEAQVi/tHy2dBlpr3Sp2U7NkGBA==\"},\"operationType\":\"insert\",\"fullDocument\":{\"_id\":\"5a0cc60546e9b46850bbdc35\",\"device\":{\"name\":\"ecobee_1234\",\"celsiusTemperature\":14,\"timeStamp\":\"2017-11-15T22:56:05.305Z\"}},\"ns\":{\"db\":\"demo\",\"coll\":\"devices\"},\"documentKey\":{\"_id\":\"5a0cc60546e9b46850bbdc35\"}}",
+  "isBase64Encoded": false
+}
