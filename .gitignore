@@ -1,5 +1,6 @@
 
 email-lambda/dev.config.js
+trigger/dev.config.js
 email-lambda/dev.sam.yaml
 email-lambda/node_modules/
 trigger/node_modules/
