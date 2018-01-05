@@ -12,6 +12,7 @@
   "dependencies": {
     "aws-api-gateway-client": "^0.2.9",
     "mongodb": "^3.0.1",
+    "mongodb-extjson": "^2.0.0",
     "node-persist": "^2.1.0"
   }
 }
