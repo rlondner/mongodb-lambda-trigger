@@ -22,14 +22,17 @@ MongoClient.connect(url, (err, client) => {
         function(token) {
           if (token !== undefined) {
             console.log(`using resume token: ${JSON.stringify(token)}`);
-            changeStream = coll.watch([matchStage], { resumeAfter: token });
+            changeStream = coll.watch([matchStage], { resumeAfter: token});
           }
         },
         function(err) {
           console.log("error retrieving change stream resume token: " + err);
         }
-      );
-      pollStream(changeStream, storage);
+      ).then(function() {
+        console.log('here');
+        pollStream(changeStream, storage);
+      });
+      
     } else {
       changeStream.on("change", c => console.log(c));
     }
@@ -37,10 +40,12 @@ MongoClient.connect(url, (err, client) => {
 });
 
 function pollStream(cs, storage) {
+  console.log('polling change stream...')
   cs.next((err, change) => {
     if (err) return console.log(err);
     resumeToken = change._id;
     //resumeToken = change.documentKey._id;
+    console.log(JSON.stringify(resumeToken))
     storage.setItem(CS_TOKEN, resumeToken).then(function() {
       console.log(change);
     });

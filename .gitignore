@@ -1,12 +1,13 @@
 
 email-lambda/dev.config.js
 trigger/dev.config.js
+trigger/package-lock.json
+trigger/config.js
 email-lambda/dev.sam.yaml
 email-lambda/node_modules/
 trigger/node_modules/
 trigger/data
+trigger/localStorage/
 email-lambda/packaged.yaml
 email-lambda/package-lock.json
 email-lambda/event_simple.json
-trigger/package-lock.json
-trigger/config.js
